@@ -1,0 +1,22 @@
+.inputBox {
+  width: 400px;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #757575;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2px;
+  box-sizing: border-box;
+}
+.calendarWrap {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+}
+.calendarElement {
+  border: 1px solid #757575;
+  z-index: 999;
+  width: 400px;
+  font-size: 12px;
+}

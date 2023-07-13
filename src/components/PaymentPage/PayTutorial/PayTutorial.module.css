@@ -1,0 +1,75 @@
+.content {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.content div:first-child {
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.fields{
+    margin-bottom: 30px;
+}
+.fields > *:not(:last-child){
+    margin-bottom: 15px;
+}
+.checkbox {
+	display: flex;
+    align-items: center;
+
+}
+.checkboxText {
+	color: #757575;
+}
+
+.checkboxText::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 21px;
+	height: 21px;
+	background-size: 20px;
+	border: 1px solid #2c60e3;
+	border-radius: 5px;
+	margin-right: 8px;
+}
+
+.checkbox__field:checked ~ .checkboxText::before {
+	background-image: url('./../../../media/checkbox-checked.svg');
+}
+
+.checkboxText,
+.checkboxText > a {
+	font-size: 16px;
+}
+.checkboxText > a{
+    color: #2C60E3;
+    border-bottom: 1px solid;
+}
+.checkboxText > a:hover{
+    border-bottom: none;
+}
+.checkboxText > a:active{
+    color: black;
+}
+
+.checkboxText > a:visited {
+	color: #415fac;
+}
+@media (max-width: 1099px) {
+    .content {
+        margin-top: 20px; 
+    }
+    
+    .container {
+        margin-bottom: 50px;
+    }
+    .checkbox {
+		align-self: flex-start;
+	}
+}
